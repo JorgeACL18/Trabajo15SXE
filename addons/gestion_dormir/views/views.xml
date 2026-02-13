@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="gestion_dormir.list">
+      <field name="name">gestion_dormir list</field>
+      <field name="model">gestion_dormir.gestion_dormir</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="gestion_dormir.action_window">
+      <field name="name">gestion_dormir window</field>
+      <field name="res_model">gestion_dormir.gestion_dormir</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="gestion_dormir.action_server">
+      <field name="name">gestion_dormir server</field>
+      <field name="model_id" ref="model_gestion_dormir_gestion_dormir"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="gestion_dormir" id="gestion_dormir.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="gestion_dormir.menu_1" parent="gestion_dormir.menu_root"/>
+    <menuitem name="Menu 2" id="gestion_dormir.menu_2" parent="gestion_dormir.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="gestion_dormir.menu_1_list" parent="gestion_dormir.menu_1"
+              action="gestion_dormir.action_window"/>
+    <menuitem name="Server to list" id="gestion_dormir" parent="gestion_dormir.menu_2"
+              action="gestion_dormir.action_server"/>
+-->
+  </data>
+</odoo>
