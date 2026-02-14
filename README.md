@@ -1,7 +1,5 @@
 #  Tarea 15: Desarrollo de Módulo Personalizado
 
----
-
 ## Procedimiento
 Para crear este mçodulo personalizado, primero, lo que hemos hecho fue usar esta línea de código en la terminal `docker exec -it odoo18_app15 odoo scaffold gestion_dormir /mnt/extra-addons/` para crear los archivos necesarios para elaborar la aplicación.
 
